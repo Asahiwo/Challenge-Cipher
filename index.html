@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>One - Challenge</title>
+</head>
+<body>
+    <main>
+        <img src="assets/aluravector.png" alt="alura" class="alura">
+        <section>
+        <div class="caixas">
+            <div class="box_and_buttons">
+                <div class="inputBox">
+                    <textarea id="input" name="criptografar" placeholder="Digite seu texto"></textarea>
+                    <label for="input">Apenas letras minúsculas e sem acento.</label>
+                    <div class="botoes">
+                        <button onclick="encBtn();" class="botao" id="bazul">Criptografar</button>
+                        <button onclick="decBtn();" class="botao" id="bbranco">Descriptografar</button>
+                    </div>
+                </div>
+            </div>
+                <div class="outputSection">
+                    <div class="outputBox">
+                        <textarea readonly id="output" name="criptografar" placeholder="output"></textarea>
+                        <button onclick="copyBtn();" class="botao" id="bbranco">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="app.js"></script>
+</body>
+</html>

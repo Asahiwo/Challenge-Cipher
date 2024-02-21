@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+    color: #343A40;
+    overflow: hidden;
+}
+
+.alura {
+    margin: 20px;
+}
+
+.caixas {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0% 10%;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+#input {
+    max-width: 100%;
+    line-height: 1.5;
+    background-color: #F3F5FC;
+    border: 0px;
+    outline: none;
+    resize: none;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #0A3871;
+    width: 40vw;
+    height: 70vh;
+}
+
+label {
+    font-size: .75rem;
+    color: #495057;
+    background: url(assets/bi_exclamation-circle-fill.svg) no-repeat;
+    padding-left: 24px;
+    display: block;
+    background-size: contain;
+}
+
+.outputBox {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    position: relative;
+}
+
+#output {
+    padding: 32px;
+    max-width: 100%;
+    line-height: 1.5;
+    background-color: white;
+    border: 1px white;
+    border-radius: 16px;
+    outline: none;
+    resize: none;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    color: #495057;
+    width: 30vw;
+    height: 70vh;
+}
+
+.botao {
+    margin: 12px;
+    border: 0px;
+    border-radius: 16px;
+    padding: 15px 32px;
+    border: 2px solid #0A3871;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    width: 328px;
+}
+
+button[onclick^="copy"] {
+    position: absolute;
+    bottom: 32px;
+    margin: 0;
+}
+
+#bazul {
+    background-color: #0A3871;
+    color: white;
+}
+
+#bazul:hover {
+    background-color: #072B61;
+    border: 2px solid #072B61;
+}
+
+#bbranco {
+    color: #0A3871;
+    background-color: #F3F5FC;
+}
+
+#bbranco:hover {
+    background-color: #EFF1FA;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        overflow: visible;
+    }
+
+    .caixas {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0% 10%;
+    }
+    #output {
+        padding: 32px;
+        max-width: 100%;
+        line-height: 1.5;
+        background-color: white;
+        border: 1px white;
+        border-radius: 16px;
+        outline: none;
+        resize: none;
+        font-size: 32px;
+        font-family: 'Montserrat', sans-serif;
+        color: #495057;
+        width: 70vw;
+        height: 70vh;
+    }
+    .botao {
+        margin-left: .5rem;
+        border: 0px;
+        border-radius: 16px;
+        padding: 15px 24px;
+        border: 2px solid #0A3871;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        width: 16rem;
+    }
+}
