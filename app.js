@@ -32,7 +32,5 @@ function decrypt(input) {
 
 function copyBtn(input) {
     const copy = document.getElementById("output");
-    copy.select();
-    copy.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(copy.value);
 }
